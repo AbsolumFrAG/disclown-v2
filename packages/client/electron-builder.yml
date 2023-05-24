@@ -1,0 +1,12 @@
+appId: github.com/AbsolumFrAG/disclown
+productName: disclown
+copyright: Copyright © 2023 Lou Tigroudja
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null

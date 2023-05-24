@@ -1,0 +1,59 @@
+{
+  "name": "disclown",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "boot": "lerna bootstrap --concurrency=1",
+    "dev": "lerna run dev",
+    "dev:app": "lerna run dev --scope=@connect/{client,server}",
+    "dev:web": "lerna run dev --scope=@connect/web",
+    "dev:server": "lerna run dev --scope=@connect/server",
+    "build": "lerna run build",
+    "build:client": "lerna run build --scope=@connect/client",
+    "build:web": "lerna run build --scope=@connect/web",
+    "build:server": "lerna run build --scope=@connect/server",
+    "version": "lerna version --conventional-commits",
+    "diff": "lerna diff",
+    "clean": "lerna clean --yes",
+    "lerna-dockerize": "lerna-dockerize"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^4.0.0",
+    "@graphql-codegen/typescript": "^4.0.0",
+    "@graphql-codegen/typescript-operations": "^4.0.0",
+    "@graphql-codegen/typescript-urql": "^3.7.3",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/connect-redis": "^0.0.20",
+    "@types/express": "^4.17.17",
+    "@types/express-session": "^1.17.7",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^20.2.3",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "autoprefixer": "^10.4.14",
+    "electron": "^24.3.1",
+    "electron-builder": "^23.6.0",
+    "eslint": "^8.41.0",
+    "eslint-config-next": "^13.4.3",
+    "graphql": "^16.6.0",
+    "graphql-tag": "^2.12.6",
+    "lerna": "^6.6.2",
+    "lerna-dockerize": "^1.0.9",
+    "next": "^13.4.3",
+    "nextron": "^8.5.0",
+    "nodemon": "^2.0.22",
+    "postcss": "^8.4.23",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "connect-redis": "^7.1.0",
+    "redis": "^4.6.6",
+    "unique-names-generator": "^4.7.1"
+  }
+}

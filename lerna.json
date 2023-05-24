@@ -1,0 +1,11 @@
+{
+  "packages": ["./packages/*"],
+  "version": "independent",
+  "npmClient": "pnpm",
+  "useWorkspaces": true,
+  "stream": true,
+  "lerna-dockerize": {
+    "templateDockerfileName": "Dockerfile.template",
+    "baseDockerfileName": "Dockerfile.base"
+  }
+}
